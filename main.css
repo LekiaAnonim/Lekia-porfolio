@@ -63,7 +63,7 @@ body {
 	color: var(--t-fg);
 	font-family: 'Inter', 'system-ui', sans-serif;
 	width: 100%;
-	background-image: url('/assets/photo-1423784346385-c1d4dac9893a.jfif');
+	background-image: url('Lekia-porfolio/assets/photo-1423784346385-c1d4dac9893a.jfif');
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -317,19 +317,19 @@ width: 75%;
     transition: transform ease-in-out 2s;
 }
 .skill{
-    transform: translateX(0%) translateY(-100%);
+    transform: translateX(0%) translateY(-103.2%);
     transform-origin: left;
     transform-style: preserve-3d;
     transition: transform ease-in-out 2s;
 }
 .project{
-    transform: translateX(0%) translateY(-200%);
+    transform: translateX(0%) translateY(-207%);
     transform-origin: left;
     transform-style: preserve-3d;
     transition: transform ease-in-out 2s;
 }
 .experience{
-    transform: translateX(0%) translateY(-300%);
+    transform: translateX(0%) translateY(-311%);
     transform-origin: left;
     transform-style: preserve-3d;
     transition: transform ease-in-out 3s;
