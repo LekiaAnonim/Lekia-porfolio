@@ -514,19 +514,7 @@ a{
 .articles-page{
   height: 100%;
 }
-.skill {
-    transform: translateX(0%) translateY(-100%);
-}
 
-.project {
-    transform: translateX(0%) translateY(-200%);
-    
-}
-
-.experience {
-    transform: translateX(0%) translateY(-300%);
-}
-}
 
 .title {
     font-weight: 900;
