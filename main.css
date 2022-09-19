@@ -63,7 +63,7 @@ body {
 	color: var(--t-fg);
 	font-family: 'Inter', 'system-ui', sans-serif;
 	width: 100%;
-	background-image: url('Lekia-porfolio/assets/photo-1423784346385-c1d4dac9893a.jfif');
+	background-image: url('assets/photo-1423784346385-c1d4dac9893a.jfif');
 	background-repeat: no-repeat;
 	background-size: cover;
 }
