@@ -60,7 +60,7 @@
 
 body {
 	margin: 0;
-	color: var(--t-fg);
+	color: #ffffff;
 	font-family: 'Inter', 'system-ui', sans-serif;
 	width: 100%;
 	background-image: url('assets/photo-1423784346385-c1d4dac9893a.jfif');
@@ -177,6 +177,7 @@ nav {
     margin-top: 10px;
     height: 260px;
     overflow-y: scroll;
+    width: 100%;
 }
 .skill-container{
     display: flex;
@@ -309,7 +310,11 @@ width: 75%;
 /* overflow-y: scroll; */
 }
 .about-card{
-    padding: 10px;
+    margin-top: 10px;
+    height: 260px;
+    /* padding: 10px; */
+    overflow-y: scroll;
+    width: 100%;
 }
 .about{
     transform-origin: left;
@@ -334,10 +339,19 @@ width: 75%;
     transform-style: preserve-3d;
     transition: transform ease-in-out 3s;
 }
-.skillbtn:focus, .abtbtn:focus, .projectbtn:focus, .expbtn:focus {
-    
+.skillbtn:focus,
+.abtbtn:focus,
+.projectbtn:focus,
+.expbtn:focus {
+
     background-color: #b24592;
     color: #ffffff;
+}
+.navbtn {
+    width: 70px;
+    height: 40px;
+    border: none;
+    font-weight: 800;
 }
 .overlay {
     margin-top: 20px;
@@ -385,7 +399,8 @@ width: 75%;
 
 .nav-bar{
     float: right;
-    margin-right: 50px;
+    margin-right: 20px;
+    margin-left: -350px;
     margin-bottom: -40px;
     z-index: 100;
 }
@@ -449,6 +464,7 @@ a{
     margin-top: 10px;
     height: 260px;
     overflow-y: scroll;
+    width: 100%;
 }
 .articles-page a:hover{
     color: #f15f79;
@@ -472,47 +488,59 @@ a{
 
 @media (max-width: 900px) {
 
-.container {
-  flex-wrap: wrap;
-      height: 1200px;
-  padding: 0 0 0 0;
-  margin: 0;
-  justify-content: center;
-  align-items: center ;
-}
+    .container {
+        flex-wrap: wrap;
+        height: 1200px;
+        padding: 0 0 0 0;
+        margin: 0;
+        justify-content: center;
+        align-items: center ;
+    }
 
-.page{
-  padding-left: 0;
-  margin-left: 0;
-}
-.overlay{
-  width: 100%;
-  margin-left: 0;
-}
-.intro{
-  width: 100%;
-}
+    .photo{
+        margin: 0;
+        width: 300px;
+        min-width: 200px;
+        height: 350px;
+    }
 
-.nav-bar{
-  float: none;
-  margin-left: 60px;
-  margin-top: 540px;
-  position: absolute;
-  /* bottom: 0; */
-}
-.project-container{
-  height: 100%;
-}
-.photo {
-  width: 100%;
-  min-width: 400px;
-  height: 550px;
-}
-.skill-card{
-  height: 100%;
-}
-.articles-page{
-  height: 100%;
+    .page{
+    padding-left: 0;
+    margin-left: 0;
+    }
+    .overlay{
+    width: 100%;
+    margin-left: 0;
+    }
+    .intro{
+    width: 100%;
+    }
+
+    .nav-bar{
+    float: none;
+    margin-left: 60px;
+    margin-top: 540px;
+    position: absolute;
+    /* bottom: 0; */
+    }
+
+    .project-container{
+    height: 100%;
+    }
+    .photo {
+    width: 100%;
+    min-width: 400px;
+    height: 550px;
+    }
+    .about-card{
+        height: 100%;
+    }
+    .skill-card{
+    height: 100%;
+    }
+    .articles-page{
+    height: 100%;
+    }
 }
 
 
@@ -552,55 +580,24 @@ a{
     display: flex;
     flex-wrap: wrap;
     gap: 0.5em;
-    font-size: var(--f-d1);
+    font-size: 14px;
 }
 
-.role {
+.roles .role {
     position: relative;
     display: inline-block;
     white-space: nowrap;
     font-weight: 900;
-    color: var(--t-bg);
-    background-color: var(--t-fg);
+    color: var(--c-black);
+    background-color: white;
     padding: 0.25em 0.5em;
     z-index: 2;
 }
 
 @media (min-width: 750px) {
-.role {
-  font-size: var(--f-u3);
-}
-}
-
-.role:nth-of-type(1) .invert {
-background-color: var(--c-pink);
-}
-
-.role:nth-of-type(2) .invert {
-background-color: var(--c-blue);
-}
-
-.role:nth-of-type(3) .invert {
-background-color: var(--c-green);
-}
-
-.role:hover .invert {
-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-}
-
-.invert {
-    position: absolute;
-    color: var(--t-fg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    pointer-events: none;
-    clip-path: polygon(0% 100%, 100% 100%, 100% 200%, 0% 200%);
-    transition: clip-path cubic-bezier(0.4, 0, 0.5, 1) 150ms;
+    .role {
+        font-size: var(--f-u3);
+    }
 }
 
 .desc {
